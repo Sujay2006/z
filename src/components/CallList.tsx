@@ -72,7 +72,7 @@ const CallList = ({type}:{ type: 'ended'|'upcoming'|'recordings'}) => {
           :'/icons/recordings.svg'
         }
         title={(meeting as Call).state?.custom?.description?.substring(0, 20) || 'No description'}
-        date={meeting.state?.startsAt.toLocaleString() || meeting.start_time.toLocaleString()}
+        date={meeting.state?.startsAt.toLocaleString() || meeting.state?.start_time.toLocaleString()}
         isPreviousMeeting={type === 'ended'}
         buttonIcon1={type === 'recordings'? '/icons/play.svg' : undefined}
         handleClick={type==='recordings' ? ()=> router.push(`${meeting.url}`): ()=> router.push(`/meeting/${meeting.id}`)}
