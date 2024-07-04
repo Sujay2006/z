@@ -10,7 +10,7 @@ const Navbar = () => {
       <Link href='/' className='flex items-center gap-1'>
         <Image src="/icons/logo.svg" alt='yoom logo' width={40} height={40} className='max-sm:size-10'/>
         <p className='text-[26px] font-extrabold text-white max-sm:size-10'>Zoom</p>
-        <p className='text-[12px] font-[10px] p-2 pb-0 text-white max-sm:size-5'>By Sujay_Shah</p>
+        <p className='text-[12px] font-[10px] p-2 pb-0 text-white max-sm:size-1'>By Sujay_Shah</p>
       </Link>
 
       <div className="flex justify-between items—center gap-5">
